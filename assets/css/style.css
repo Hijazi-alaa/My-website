@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Lobster&family=Oswald&display=swap');
 
 /* oppening div */
 
@@ -26,6 +27,8 @@
     font-size: 36px;
 }
 
+/* navbar*/
+
 .navbar-light {
     background-color: #E9FDFD;
 }
@@ -34,4 +37,42 @@
 .dropdown-item {
     color: black;
     font-family: 'Lobster', cursive;
+}
+
+/* About me */
+
+.about-container {
+    background-color: #E9FDFD;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "heading a"
+        "c content"
+        "c content";
+}
+
+.about-heading {
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    grid-area: heading;
+    display: flex;
+}
+
+
+
+.about-heading h4 {
+    font-size: 50px;
+}
+
+.about-content {
+    font-family: 'Oswald', sans-serif;
+    grid-row: span 1;
+    grid-area: content;
+    display: flex;
+}
+
+.about-content p {
+    font-size: 24px;
+    word-spacing: 120%;
 }
